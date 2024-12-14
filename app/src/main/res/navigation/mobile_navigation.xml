@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.fitnessapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_programs"
+        android:name="com.example.fitnessapp.ui.programs.ProgramsFragment"
+        android:label="Programs"
+        tools:layout="@layout/fragment_programs" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.fitnessapp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_trainers"
+        android:name="com.example.fitnessapp.ui.trainers.TrainersFragment"
+        android:label="Trainers"
+        tools:layout="@layout/fragment_trainers" />
+
+    <fragment
+        android:id="@+id/navigation_video_classes"
+        android:name="com.example.fitnessapp.ui.videoclasses.VideoClassesFragment"
+        android:label="Video Classes"
+        tools:layout="@layout/fragment_video_classes" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.example.fitnessapp.ui.contact.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

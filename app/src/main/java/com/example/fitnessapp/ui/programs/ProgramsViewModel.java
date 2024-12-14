@@ -1,16 +1,15 @@
-package com.example.fitnessapp.ui.notifications;
+package com.example.fitnessapp.ui.programs;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
-
+public class ProgramsViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public ProgramsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("hello");
     }
 
     public LiveData<String> getText() {
