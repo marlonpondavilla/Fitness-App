@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#22252e"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/cardPrograms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/offerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Taining"
+            android:layout_gravity="center"
+            android:textFontWeight="40"
+            android:textColor="#f5f5f5"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/offerDescrription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Build muscle and strength with expert-led weight training process"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textFontWeight="40"
+            android:textColor="#f5f5f5"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
