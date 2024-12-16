@@ -15,7 +15,6 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ProgramV
     private String[] programTitles;
     private String[] programDescriptions;
 
-    // ViewHolder for each program item
     public static class ProgramViewHolder extends RecyclerView.ViewHolder {
         TextView programTitle;
         TextView programDescription;

@@ -15,7 +15,6 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"/>
 
-
     <!-- Heading for the Programs section -->
     <TextView
         android:layout_width="match_parent"
