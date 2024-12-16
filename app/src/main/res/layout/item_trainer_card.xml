@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#fff"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/trainerImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/yulo"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/TrainersImageCornerShape"/>
+
+        <TextView
+            android:id="@+id/trainerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carlos Yulo"
+            android:layout_gravity="center"
+            android:textFontWeight="40"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:fontFamily="@font/be_vietnam_pro_bold"/>
+
+        <TextView
+            android:id="@+id/trainerDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Filipino artistic gymnast. He is the 2024 Olympic Gold Medalist."
+            android:textColor="#050505"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

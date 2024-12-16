@@ -3,138 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f5f5f5"
     tools:context=".ui.programs.ProgramsFragment">
 
+    <!-- RecyclerView to display program list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+
+    <!-- Heading for the Programs section -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_margin="40dp"
         android:fontFamily="@font/be_vietnam_pro_bold"
         android:gravity="center"
-        android:text="What We Offer"
+        android:text="Our Programs"
         android:textColor="#050505"
-        android:textSize="36dp" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#22252e"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="120dp"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:id="@+id/offerTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Weight Taining"
-                android:layout_gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="20dp"
-                android:fontFamily="@font/be_vietnam_pro_bold"/>
-
-            <TextView
-                android:id="@+id/offerDescrription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Build muscle and strength with expert-led weight training process"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"/>
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#22252e"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="220dp"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Online Workout"
-                android:layout_gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="20dp"
-                android:fontFamily="@font/be_vietnam_pro_bold"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your coach will teach you workouts via online"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"/>
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#22252e"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="304dp"
-        app:cardCornerRadius="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Workout Notification"
-                android:layout_gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="20dp"
-                android:fontFamily="@font/be_vietnam_pro_bold"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Send workout reminders, membership, and schedule updates via notifications."
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textFontWeight="40"
-                android:textColor="#f5f5f5"
-                android:textSize="14dp"
-                android:layout_marginTop="10dp"/>
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
+        android:textSize="30sp" />
 </FrameLayout>
