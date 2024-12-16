@@ -55,7 +55,8 @@ public class TrainersFragment extends Fragment {
         String[] trainerDescs = {
                 "Filipino artistic gymnast, 2024 Olympic Gold Medalist.",
                 "Professional Yoga Instructor specializing in Hatha Yoga.",
-                "Manny Paquiao is a professional boxer. Nicknamed \"PacMan\", he is widely regarded as one of the greatest professional boxers of all time."
+                "Manny Paquiao is a professional boxer. Nicknamed \"PacMan\", he is widely regarded as one of the greatest professional boxers of all time.",
+
         };
 
         // Set the trainer data in the ViewModel

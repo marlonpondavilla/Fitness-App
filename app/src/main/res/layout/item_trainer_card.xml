@@ -7,11 +7,12 @@
     app:cardElevation="6dp"
     app:cardCornerRadius="8dp"
     android:layout_marginTop="16dp"
-    android:layout_marginBottom="20dp">
+    android:layout_marginBottom="16dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginBottom="10dp"
         android:padding="18dp">
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -19,7 +20,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/yulo"
             android:scaleType="centerCrop"
             app:shapeAppearanceOverlay="@style/TrainersImageCornerShape"/>

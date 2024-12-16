@@ -37,13 +37,14 @@ public class VideoClassesFragment extends Fragment {
             videoClassesAdapter.setVideoClassData(titles, descriptions, prices);
         });
 
-        String[] videoClassTitles = {"Basic Plan", "Standard Plan", "Premium Plan"};
+        String[] videoClassTitles = {"Basic Plan", "Standard Plan", "Premium Plan", "Supreme plan"};
         String[] videoClassDescriptions = {
                 "Start your yoga journey with this beginner-friendly course.",
                 "Build strength and flexibility with Pilates sessions.",
-                "Push your limits with high-intensity strength workouts."
+                "Push your limits with high-intensity strength workouts.",
+                "lorem ipsum dolor sit amet cin sedar"
         };
-        String[] videoClassPrices = {"₱500/month", "₱700/month", "₱600/month"};
+        String[] videoClassPrices = {"₱500/month", "₱700/month", "₱600/month", "₱800/month"};
 
         videoClassesViewModel.setVideoClassData(videoClassTitles, videoClassDescriptions, videoClassPrices);
 
