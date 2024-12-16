@@ -21,7 +21,7 @@ public class VideoClassesAdapter extends RecyclerView.Adapter<VideoClassesAdapte
         this.titles = titles;
         this.descriptions = descriptions;
         this.prices = prices;
-        notifyDataSetChanged(); // Notify the adapter when data changes
+        notifyDataSetChanged();
     }
 
     @NonNull

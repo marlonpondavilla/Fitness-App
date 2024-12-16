@@ -30,18 +30,14 @@ public class TrainersFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_trainers, container, false);
 
-        // Initialize the RecyclerView
         recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Initialize the adapter
         adapter = new TrainerAdapter();
         recyclerView.setAdapter(adapter);
 
-        // Initialize the ViewModel
         mViewModel = new ViewModelProvider(this).get(TrainersViewModel.class);
 
-        // Observe data from the ViewModel
         mViewModel.getTrainerImg().observe(getViewLifecycleOwner(), new Observer<int[]>() {
             @Override
             public void onChanged(int[] trainerImgs) {
