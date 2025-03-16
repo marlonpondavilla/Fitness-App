@@ -103,7 +103,6 @@ public class signup extends AppCompatActivity {
                                                             .addOnSuccessListener(aVoid -> {
                                                                 Log.d("SignUpPage", "User added to Realtime Database");
                                                                 Toast.makeText(signup.this, "Account created successfully", Toast.LENGTH_LONG).show();
-                                                                startActivity(new Intent(signup.this, MainActivity.class));
                                                                 finish();
                                                             })
                                                             .addOnFailureListener(e -> {
@@ -129,7 +128,6 @@ public class signup extends AppCompatActivity {
                                     }
                                 }
                             });
-
                 }
             }
         });
@@ -137,6 +135,7 @@ public class signup extends AppCompatActivity {
         haveAccTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                auth.signOut();
                 Intent goBackToLoginPage = new Intent(signup.this, login.class);
                 startActivity(goBackToLoginPage);
             }

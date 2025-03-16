@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
     Button logoutButton;
 
     private ActivityMainBinding binding;
-    private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

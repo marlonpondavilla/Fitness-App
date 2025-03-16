@@ -28,6 +28,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeFragment extends Fragment {
 
+    TextView userName;
     Button logoutButton, submitButton;
     EditText headerEditText, descriptionEditText;
 
@@ -57,6 +58,18 @@ public class HomeFragment extends Fragment {
 
         logoutButton = binding.logoutBtn;
         submitButton = binding.submitButton;
+        userName = binding.userName;
+
+        //      check if the user is in the dashboard
+        if (auth.getCurrentUser() != null) {
+            userName.setText("Hi, " + auth.getCurrentUser().getDisplayName());
+
+        } else {
+            Toast.makeText(requireActivity(), "Please sign in to view this page", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(requireActivity(), MainActivity.class);
+            startActivity(intent);
+            requireActivity().finish();
+        }
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +80,6 @@ public class HomeFragment extends Fragment {
                 addInputToDb(headerEditText, descriptionEditText);
             }
         });
-
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
