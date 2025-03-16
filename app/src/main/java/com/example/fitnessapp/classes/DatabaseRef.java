@@ -2,15 +2,17 @@ package com.example.fitnessapp.classes;
 
 public class DatabaseRef {
     private String itemId;
-    private String itemData;
+    private String programHeader;
+    private String programDescription;
 
     public DatabaseRef() {
 //        Default constructor
     }
 
-    public DatabaseRef(String itemId, String itemData) {
+    public DatabaseRef(String itemId, String programHeader, String programDescription) {
         this.itemId = itemId;
-        this.itemData = itemData;
+        this.programHeader = programHeader;
+        this.programDescription = programDescription;
     }
 
     public String getItemId() {
@@ -21,11 +23,19 @@ public class DatabaseRef {
         this.itemId = itemId;
     }
 
-    public String getItemData() {
-        return itemData;
+    public String getProgramHeader() {
+        return programHeader;
     }
 
-    public void setItemData(String itemData) {
-        this.itemData = itemData;
+    public void setProgramHeader(String programHeader) {
+        this.programHeader = programHeader;
+    }
+
+    public String getProgramDescription() {
+        return programDescription;
+    }
+
+    public void setProgramDescription(String programDescription) {
+        this.programDescription = programDescription;
     }
 }
