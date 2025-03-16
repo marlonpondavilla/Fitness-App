@@ -44,7 +44,7 @@ public class VideoClassesFragment extends Fragment {
                 "Push your limits with high-intensity strength workouts.",
                 "lorem ipsum dolor sit amet cin sedar"
         };
-        String[] videoClassPrices = {"₱500/month", "₱700/month", "₱600/month", "₱800/month"};
+        String[] videoClassPrices = {"₱500/month", "₱600/month", "₱800/month", "₱1200/month"};
 
         videoClassesViewModel.setVideoClassData(videoClassTitles, videoClassDescriptions, videoClassPrices);
 

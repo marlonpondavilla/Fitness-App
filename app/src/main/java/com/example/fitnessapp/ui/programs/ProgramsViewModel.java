@@ -4,23 +4,19 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.fitnessapp.classes.Program;
+
+import java.util.List;
+
 public class ProgramsViewModel extends ViewModel {
 
-    private final MutableLiveData<String[]> programTitles = new MutableLiveData<>();
-    private final MutableLiveData<String[]> programDescs = new MutableLiveData<>();
+    private final MutableLiveData<List<Program>> programsList = new MutableLiveData<>();
 
-    // Expose LiveData for program titles and descriptions
-    public LiveData<String[]> getProgramTitles() {
-        return programTitles;
+    public LiveData<List<Program>> getPrograms() {
+        return programsList;
     }
 
-    public LiveData<String[]> getProgramDescs() {
-        return programDescs;
-    }
-
-    // Set program data
-    public void setProgramData(String[] titles, String[] descriptions) {
-        programTitles.setValue(titles);
-        programDescs.setValue(descriptions);
+    public void setProgramData(List<Program> programs) {
+        programsList.setValue(programs);
     }
 }
