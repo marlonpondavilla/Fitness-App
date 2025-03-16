@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_img"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="540dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="#E4EFE7">
+
+        <ImageView
+            android:id="@+id/loginTitle"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginVertical="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/loginTitle"
+            android:hint="Enter username/email" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/usernameInput"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:hint="Enter password"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#344CB7"
+            android:textSize="14dp"
+            android:text="Login"
+            android:layout_below="@+id/passwordInput"/>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#3E7B27"
+            android:textSize="14dp"
+            android:text="Sign Up"
+            android:layout_below="@+id/loginBtn"/>
+
+        <TextView
+            android:id="@+id/forgotPassTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="12sp"
+            android:layout_below="@+id/signupBtn"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/continueWith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or continue with"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/forgotPassTxt"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/continueWith"
+            android:background="#5E686D"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/googleProviderBtn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
