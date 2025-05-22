@@ -82,13 +82,13 @@ public class HomeFragment extends Fragment {
         });
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                auth.signOut();
+                            @Override
+                            public void onClick(View view) {
+                                auth.signOut();
 
-                googleSignInClient.signOut().addOnCompleteListener(requireActivity(), task -> {
-                    if (!task.isSuccessful()) {
-                        Toast.makeText(requireActivity(), "Logout failed", Toast.LENGTH_SHORT).show();
+                                googleSignInClient.signOut().addOnCompleteListener(requireActivity(), task -> {
+                                    if (!task.isSuccessful()) {
+                                        Toast.makeText(requireActivity(), "Logout failed", Toast.LENGTH_SHORT).show();
                     } else {
                         Intent logout = new Intent(requireActivity(), login.class);
                         startActivity(logout);
